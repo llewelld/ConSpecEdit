@@ -1,0 +1,37 @@
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <jxb:bindings schemaLocation="xsd_aniketos.xsd" node="/xs:schema">
+    <jxb:globalBindings
+         fixedAttributeAsConstantProperty="false"
+         collectionType="java.util.Vector"
+         typesafeEnumBase="xs:NCName"
+         choiceContentProperty="true"
+         typesafeEnumMemberName="generateError"
+         enableFailFastCheck="false"   
+         generateIsSetMethod="false"
+         underscoreBinding="asCharInWord"
+				 />
+    <jxb:schemaBindings>
+      <jxb:package name="eu.aniketos">
+        <jxb:javadoc><![CDATA[<body>Package level documentation for generated package eu.aniketos.</body>]]></jxb:javadoc>
+      </jxb:package>
+    </jxb:schemaBindings>
+
+		<!-- 
+    <jxb:bindings node="//xs:complexType[@name='binary']">
+      <jxb:class name="binary">
+        <jxb:javadoc><![CDATA[The left hand side of a binary expression]]></jxb:javadoc>
+      </jxb:class>
+
+      <jxb:bindings node=".//xs:sequence/xs:group[1]">
+        <jxb:property name="lhs"/>
+      </jxb:bindings>
+
+      <jxb:bindings node=".//xs:sequence/xs:group[2]">
+				<jxb:property name="rhs"/>
+      </jxb:bindings>
+    </jxb:bindings>
+		-->
+
+  </jxb:bindings> <!-- schemaLocation="xsd_aniektos.xsd" node="/xs:schema" -->
+
+</jxb:bindings>

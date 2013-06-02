@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="ConSpec Editor"
+            extensions="conspec"
+            icon="icons/conspec.png"
+            contributorClass="conspecedit.editors.MultiPageEditorContributor"
+            class="conspecedit.editors.ConSpecEditor"
+            id="conspecedit.editors.ConSpecEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            name="Aniketos"
+            id="ConSpecEdit">
+      </category>
+      <wizard
+            name="ConSpec file"
+            icon="icons/conspec.png"
+            category="ConSpecEdit"
+            class="conspecedit.wizards.ConSpecNewWizard"
+            id="conspecedit.wizards.ConSpecNewWizard">
+      </wizard>
+   </extension>
+
+</plugin>
