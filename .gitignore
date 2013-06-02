@@ -1,0 +1,10 @@
+#java specific
+*.class
+
+## gneric files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
